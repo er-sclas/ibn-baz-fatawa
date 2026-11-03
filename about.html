@@ -42,12 +42,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <p>The Arabic is taken from the HTML of each fatwa page, retrieved directly and parsed locally; no summarising or intermediate rendering service is used. The title, question, answer, and the page’s own footnotes are extracted verbatim. Honorific formulae that the page encodes as private-use ligature glyphs are expanded to their Arabic wording, and any glyph that cannot be mapped is flagged rather than dropped. Editorial classification on the page (its category line) is excluded from the text.</p>
 
     <h2>2. Principle of translation</h2>
-    <p>The translation is formal-equivalence: it follows the syntax, order, and connectives of the Arabic as closely as English grammar allows, and it does not paraphrase, abridge, or harmonise. Three constraints govern every rendering:</p>
+    <p>The translation is meaning-based. Each sentence of the Arabic is rendered in natural, formal English: sentences are restructured to English word order, and the Arabic connectives (<em>wa-</em>, <em>fa-</em>) are expressed by English punctuation and conjunctions rather than reproduced word for word. Where the Arabic achieves emphasis through repetition or strings of near-synonyms, every distinct meaning is kept and the emphasis is conveyed by English means. Three constraints govern every rendering:</p>
     <ol>
-      <li><strong>No addition.</strong> No ḥadīth grading, scriptural reference, honorific, or explanatory clause appears in the text unless it is present in the Arabic.</li>
-      <li><strong>No omission.</strong> Repetitions, reported opinions, refutations, citations, and closing supplications are retained in full.</li>
+      <li><strong>No addition.</strong> No ḥadīth grading, scriptural reference, honorific, or explanatory clause appears in the text unless it is present in the Arabic. The only exception is the bracketed glosses described below.</li>
+      <li><strong>No omission.</strong> Every ruling, condition, exception, proof, reported opinion, refutation, citation, and closing supplication is retained.</li>
       <li><strong>No alteration of meaning.</strong> Where the Arabic is ambiguous, the English preserves the ambiguity rather than resolving it.</li>
     </ol>
+    <p><strong>Glosses.</strong> Arabic terms likely to be unfamiliar to a general English reader (for example <em>nifās</em>, <em>ṣufrah</em>, <em>kudrah</em>, <em>isbāl</em>) are followed at their first occurrence in each fatwa by their established English meaning in square brackets, e.g. <em>nifās</em> [postnatal bleeding]. Square brackets mark the gloss as the translator’s, not the author’s. Terms in common use among English-speaking Muslims (Sunnah, ḥadīth, wuḍūʾ, ṣalāh, ʿaqīdah) are not glossed. The glosses are drawn from a single controlled list so that each term is explained the same way throughout the collection.</p>
 
     <h2>3. Creed and terminology</h2>
     <p>The divine attributes are rendered literally, in accordance with the creed of Ahl al-Sunnah wa-l-Jamāʿah, without <em>taʾwīl</em>, <em>taʿṭīl</em>, <em>takyīf</em>, or <em>tamthīl</em>: <em>istawā</em> is rendered “rose over”, <em>al-yad</em> “the Hand”, <em>al-nuzūl</em> “the descent”. Attributes of Allah are capitalised; the corresponding words for created beings are not. A controlled glossary fixes the rendering of each such term and lists renderings that are excluded. Technical terms without an exact English equivalent (e.g. <em>wuḍūʾ</em>, <em>janābah</em>, <em>bidʿah</em>) are transliterated. Honorifics are reproduced with the same distribution as in the Arabic. Qurʾānic verses are given in the Arabic as printed, followed by an English rendering of the meaning and the reference exactly as the source gives it.</p>
@@ -57,7 +58,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ul>
       <li>parity in the count of each honorific formula between the Arabic and the English;</li>
       <li>presence of the locked glossary rendering for every glossary term occurring in the Arabic, and absence of its excluded renderings;</li>
-      <li>any grading term in the English (e.g. “authentic”, “weak”) that has no counterpart in the Arabic.</li>
+      <li>any grading term in the English (e.g. “authentic”, “weak”) that has no counterpart in the Arabic;</li>
+      <li>a gloss at the first occurrence of every term on the controlled list, and English sentence structure rather than reproduced Arabic connectives.</li>
     </ul>
     <p>Failed checks are corrected against the Arabic. Passages that are ambiguous, syntactically incomplete, or contain apparent typographical errors in the source are translated as they stand and recorded for review; the source is not emended.</p>
 

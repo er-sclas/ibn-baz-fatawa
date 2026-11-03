@@ -344,6 +344,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 0
 .prose .ask .qa { color: var(--muted); }
 .prose .ask + .qa { margin-top: 0.25rem; }
 
+.gloss { color: var(--muted); font-family: var(--sans); font-size: 0.86em; }
 .fn-ref { font-family: var(--sans); font-size: 0.68em; font-weight: 600; color: var(--accent); margin-left: 0.1em; }
 .footnotes {
   margin: 2.25rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line);
