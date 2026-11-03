@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>About — Ibn Bāz · Fatāwā</title>
+<title>Methodology — Ibn Bāz · Fatāwā</title>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -23,7 +23,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <span class="brand-mark" aria-hidden="true">ب</span>
       <span class="brand-text"><span class="brand-name">Ibn Bāz · Fatāwā</span><span class="brand-sub" lang="ar" dir="rtl">فتاوى ابن باز</span></span>
     </a>
-    <nav class="site-nav" aria-label="Site"><a href="index.html">Fatwas</a><a href="topics/index.html">Topics</a><a href="about.html" aria-current="page">About</a></nav>
+    <nav class="site-nav" aria-label="Site"><a href="index.html">Fatwas</a><a href="topics/index.html">Topics</a><a href="about.html" aria-current="page">Methodology</a></nav>
     <form class="header-search" role="search" action="index.html" method="get">
       <label class="sr-only" for="hq">Search fatwas</label>
       <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
@@ -33,21 +33,36 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </header>
 <main id="main" tabindex="-1">
 <div class="wrap narrow-top">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Fatwas</a><span aria-hidden="true">›</span><span aria-current="page">About</span></nav>
-  <h1 class="page-title">About this site</h1>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Fatwas</a><span aria-hidden="true">›</span><span aria-current="page">Methodology</span></nav>
+  <h1 class="page-title">Methodology</h1>
   <div class="prose about">
-    <p>This site holds English translations of the fatāwā of Shaykh ʿAbd al-ʿAzīz ibn ʿAbd Allāh ibn Bāz (d. 1420 AH), taken from his official site, <a href="https://binbaz.org.sa">binbaz.org.sa</a>. It begins with the names and attributes of Allah, and other chapters are being added. 65 fatwas are translated so far.</p>
-    <h2>How the fatwas are translated</h2>
+    <p>This collection comprises 65 English translations of fatāwā of Shaykh ʿAbd al-ʿAzīz ibn ʿAbd Allāh ibn Bāz (d. 1420 AH / 1999 CE), drawn from his official website, <a href="https://binbaz.org.sa">binbaz.org.sa</a>. Each translation is accompanied by its Arabic source text and a link to the source page.</p>
+
+    <h2>1. Source text</h2>
+    <p>The Arabic is taken from the HTML of each fatwa page, retrieved directly and parsed locally; no summarising or intermediate rendering service is used. The title, question, answer, and the page’s own footnotes are extracted verbatim. Honorific formulae that the page encodes as private-use ligature glyphs are expanded to their Arabic wording, and any glyph that cannot be mapped is flagged rather than dropped. Editorial classification on the page (its category line) is excluded from the text.</p>
+
+    <h2>2. Principle of translation</h2>
+    <p>The translation is formal-equivalence: it follows the syntax, order, and connectives of the Arabic as closely as English grammar allows, and it does not paraphrase, abridge, or harmonise. Three constraints govern every rendering:</p>
+    <ol>
+      <li><strong>No addition.</strong> No ḥadīth grading, scriptural reference, honorific, or explanatory clause appears in the text unless it is present in the Arabic.</li>
+      <li><strong>No omission.</strong> Repetitions, reported opinions, refutations, citations, and closing supplications are retained in full.</li>
+      <li><strong>No alteration of meaning.</strong> Where the Arabic is ambiguous, the English preserves the ambiguity rather than resolving it.</li>
+    </ol>
+
+    <h2>3. Creed and terminology</h2>
+    <p>The divine attributes are rendered literally, in accordance with the creed of Ahl al-Sunnah wa-l-Jamāʿah, without <em>taʾwīl</em>, <em>taʿṭīl</em>, <em>takyīf</em>, or <em>tamthīl</em>: <em>istawā</em> is rendered “rose over”, <em>al-yad</em> “the Hand”, <em>al-nuzūl</em> “the descent”. Attributes of Allah are capitalised; the corresponding words for created beings are not. A controlled glossary fixes the rendering of each such term and lists renderings that are excluded. Technical terms without an exact English equivalent (e.g. <em>wuḍūʾ</em>, <em>janābah</em>, <em>bidʿah</em>) are transliterated. Honorifics are reproduced with the same distribution as in the Arabic. Qurʾānic verses are given in the Arabic as printed, followed by an English rendering of the meaning and the reference exactly as the source gives it.</p>
+
+    <h2>4. Production and verification</h2>
+    <p>Draft translations are produced with a large language model (Claude) working under the constraints above. Each draft is then checked automatically against its source for:</p>
     <ul>
-      <li><strong>Nothing added.</strong> No grading of a ḥadīth, no reference, and no honorific appears in the text unless the shaykh wrote it.</li>
-      <li><strong>Nothing removed.</strong> Repetitions, reported views, and the closing supplication stay as he gave them.</li>
-      <li><strong>No meaning changed.</strong> The attributes of Allah are rendered literally, without taʾwīl: He rose over the Throne, the Hand is the Hand.</li>
-      <li><strong>The translator stays out of the text.</strong> No explanation of the translator’s is put into the shaykh’s sentences.</li>
+      <li>parity in the count of each honorific formula between the Arabic and the English;</li>
+      <li>presence of the locked glossary rendering for every glossary term occurring in the Arabic, and absence of its excluded renderings;</li>
+      <li>any grading term in the English (e.g. “authentic”, “weak”) that has no counterpart in the Arabic.</li>
     </ul>
-    <h2>The Arabic</h2>
-    <p>Every fatwa page has an English and an Arabic tab. The Arabic is the shaykh’s text as the page gives it, so a reader can check any sentence. Each page also links to the original on binbaz.org.sa.</p>
-    <h2>Drafts</h2>
-    <p>Every translation is marked <span class="tag draft">Draft</span> until it has been reviewed and approved. This is a working collection, not a published edition. Corrections are welcome.</p>
+    <p>Failed checks are corrected against the Arabic. Passages that are ambiguous, syntactically incomplete, or contain apparent typographical errors in the source are translated as they stand and recorded for review; the source is not emended.</p>
+
+    <h2>5. Status</h2>
+    <p>A translation is marked <span class="tag draft">Draft</span> until it has been reviewed by a human reader against the Arabic and approved. This collection is a working edition, not a published one. Corrections are welcome.</p>
   </div>
 </div>
 </main>
