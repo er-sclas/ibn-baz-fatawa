@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Topics — Ibn Bāz · Fatāwā</title>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<!--
+THESIS: A fatwa library a reader can find their way through: search first, topics second, one ruling per page. Refuses the single scrolling board with a nested sidebar.
+OWN-WORLD: White page, ink text, one deep green for links and the active state, an amber tag for Draft. Literata for the shaykh's words, the system sans for the site's own controls. Dark mode follows the device.
+STORY: A reader searches or picks a topic, opens one fatwa, reads the question and the answer, opens the Arabic to check, and moves to the next in the same topic.
+FIRST VIEWPORT: Header with the name and search. On the home page, a search field the width of the column, then the topics. On a fatwa, breadcrumb, title, status line, the English/Arabic switch, then the question.
+FORM: The category standard, played straight, chosen by the user.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true">ب</span>
+      <span class="brand-text"><span class="brand-name">Ibn Bāz · Fatāwā</span><span class="brand-sub" lang="ar" dir="rtl">فتاوى ابن باز</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Site"><a href="../index.html">Fatwas</a><a href="../topics/index.html" aria-current="page">Topics</a><a href="../about.html">About</a></nav>
+    <form class="header-search" role="search" action="../index.html" method="get">
+      <label class="sr-only" for="hq">Search fatwas</label>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      <input id="hq" name="q" type="search" placeholder="Search fatwas" autocomplete="off">
+    </form>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow-top">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Fatwas</a><span aria-hidden="true">›</span><span aria-current="page">Topics</span></nav>
+  <h1 class="page-title">Topics</h1>
+  <p class="lede">Each fatwa is filed once, under the chapter a reader would look in. Only topics with a translated fatwa are listed.</p>
+  <div class="topic-grid"><section class="topic-group"><h3><span>ʿAqīdah</span> <span class="count">8</span></h3><ul class="topic-list"><li><a href="../topics/204-207.html"><span>Names and attributes</span><span class="count">5</span></a></li><li><a href="../topics/204-353.html"><span>Sorcery and divination</span><span class="count">1</span></a></li><li><a href="../topics/204-394.html"><span>Swearing by other than Allah</span><span class="count">1</span></a></li><li><a href="../topics/204-397.html"><span>Ruqyah and amulets</span><span class="count">1</span></a></li></ul></section><section class="topic-group"><h3><span>Fiqh</span> <span class="count">54</span></h3><ul class="topic-list"><li><a href="../topics/fiqh-9.html"><span>Ṭahārah</span><span class="count">17</span></a></li><li><a href="../topics/fiqh-22.html"><span>Ṣalāh</span><span class="count">19</span></a></li><li><a href="../topics/fiqh-59.html"><span>Janāʾiz</span><span class="count">1</span></a></li><li><a href="../topics/fiqh-68.html"><span>Zakāh</span><span class="count">3</span></a></li><li><a href="../topics/fiqh-77.html"><span>Ṣiyām</span><span class="count">6</span></a></li><li><a href="../topics/fiqh-96.html"><span>Ḥajj and ʿumrah</span><span class="count">2</span></a></li><li><a href="../topics/fiqh-127.html"><span>Ribā and exchange</span><span class="count">1</span></a></li><li><a href="../topics/fiqh-132.html"><span>Loans</span><span class="count">1</span></a></li><li><a href="../topics/fiqh-171.html"><span>Divorce</span><span class="count">1</span></a></li><li><a href="../topics/fiqh-186.html"><span>Dress and adornment</span><span class="count">2</span></a></li><li><a href="../topics/fiqh-338.html"><span>Pictures and image-making</span><span class="count">1</span></a></li></ul></section><section class="topic-group"><h3><span>Innovations</span> <span class="count">1</span></h3><ul class="topic-list"><li><a href="../topics/217-general.html"><span>Innovations</span><span class="count">1</span></a></li></ul></section><section class="topic-group"><h3><span>Poetry and songs</span> <span class="count">2</span></h3><ul class="topic-list"><li><a href="../topics/255-general.html"><span>Poetry and songs</span><span class="count">2</span></a></li></ul></section></div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>English translations of the fatāwā of Shaykh ʿAbd al-ʿAzīz ibn Bāz, from <a href="https://binbaz.org.sa">binbaz.org.sa</a>. Every translation here is a draft under review, not a published edition.</p>
+  </div>
+</footer>
+
+</body>
+</html>

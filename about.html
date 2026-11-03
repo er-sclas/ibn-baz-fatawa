@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>About — Ibn Bāz · Fatāwā</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!--
+THESIS: A fatwa library a reader can find their way through: search first, topics second, one ruling per page. Refuses the single scrolling board with a nested sidebar.
+OWN-WORLD: White page, ink text, one deep green for links and the active state, an amber tag for Draft. Literata for the shaykh's words, the system sans for the site's own controls. Dark mode follows the device.
+STORY: A reader searches or picks a topic, opens one fatwa, reads the question and the answer, opens the Arabic to check, and moves to the next in the same topic.
+FIRST VIEWPORT: Header with the name and search. On the home page, a search field the width of the column, then the topics. On a fatwa, breadcrumb, title, status line, the English/Arabic switch, then the question.
+FORM: The category standard, played straight, chosen by the user.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">ب</span>
+      <span class="brand-text"><span class="brand-name">Ibn Bāz · Fatāwā</span><span class="brand-sub" lang="ar" dir="rtl">فتاوى ابن باز</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Site"><a href="index.html">Fatwas</a><a href="topics/index.html">Topics</a><a href="about.html" aria-current="page">About</a></nav>
+    <form class="header-search" role="search" action="index.html" method="get">
+      <label class="sr-only" for="hq">Search fatwas</label>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      <input id="hq" name="q" type="search" placeholder="Search fatwas" autocomplete="off">
+    </form>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap narrow-top">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Fatwas</a><span aria-hidden="true">›</span><span aria-current="page">About</span></nav>
+  <h1 class="page-title">About this site</h1>
+  <div class="prose about">
+    <p>This site holds English translations of the fatāwā of Shaykh ʿAbd al-ʿAzīz ibn ʿAbd Allāh ibn Bāz (d. 1420 AH), taken from his official site, <a href="https://binbaz.org.sa">binbaz.org.sa</a>. It begins with the names and attributes of Allah, and other chapters are being added. 65 fatwas are translated so far.</p>
+    <h2>How the fatwas are translated</h2>
+    <ul>
+      <li><strong>Nothing added.</strong> No grading of a ḥadīth, no reference, and no honorific appears in the text unless the shaykh wrote it.</li>
+      <li><strong>Nothing removed.</strong> Repetitions, reported views, and the closing supplication stay as he gave them.</li>
+      <li><strong>No meaning changed.</strong> The attributes of Allah are rendered literally, without taʾwīl: He rose over the Throne, the Hand is the Hand.</li>
+      <li><strong>The translator stays out of the text.</strong> No explanation of the translator’s is put into the shaykh’s sentences.</li>
+    </ul>
+    <h2>The Arabic</h2>
+    <p>Every fatwa page has an English and an Arabic tab. The Arabic is the shaykh’s text as the page gives it, so a reader can check any sentence. Each page also links to the original on binbaz.org.sa.</p>
+    <h2>Drafts</h2>
+    <p>Every translation is marked <span class="tag draft">Draft</span> until it has been reviewed and approved. This is a working collection, not a published edition. Corrections are welcome.</p>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>English translations of the fatāwā of Shaykh ʿAbd al-ʿAzīz ibn Bāz, from <a href="https://binbaz.org.sa">binbaz.org.sa</a>. Every translation here is a draft under review, not a published edition.</p>
+  </div>
+</footer>
+
+</body>
+</html>
